@@ -68,20 +68,20 @@ len(listOflinks)
 # In[24]:
 
 
-driver= wb.Chrome(chromedriver)
-driver.get(listOflinks[1])
+#driver= wb.Chrome(chromedriver)
+#driver.get(listOflinks[1])
 
 
 # In[38]:
 
 
-nameOftheProduct=driver.find_element_by_xpath('/html/body/div[1]/div[3]/div/div[2]/div/div/div[2]/div[1]/h4[2]').text
+#nameOftheProduct=driver.find_element_by_xpath('/html/body/div[1]/div[3]/div/div[2]/div/div/div[2]/div[1]/h4[2]').text
                                                
-priceoftheProduct=driver.find_element_by_xpath('/html/body/div[1]/div[3]/div/div[2]/div/div/div[2]/div[1]/h4[1]').text
+#priceoftheProduct=driver.find_element_by_xpath('/html/body/div[1]/div[3]/div/div[2]/div/div/div[2]/div[1]/h4[1]').text
                                                 
-descOfProduct=driver.find_element_by_xpath('/html/body/div[1]/div[3]/div/div[2]/div/div/div[2]/div[1]/p').text
+#descOfProduct=driver.find_element_by_xpath('/html/body/div[1]/div[3]/div/div[2]/div/div/div[2]/div[1]/p').text
                                             
-revOfProduct=driver.find_element_by_xpath('/html/body/div[1]/div[3]/div/div[2]/div/div/div[2]/div[3]/p').text
+#revOfProduct=driver.find_element_by_xpath('/html/body/div[1]/div[3]/div/div[2]/div/div/div[2]/div[3]/p').text
                                            
 
 
@@ -89,17 +89,17 @@ revOfProduct=driver.find_element_by_xpath('/html/body/div[1]/div[3]/div/div[2]/d
 
 
 
-tempJ={'nameOftheProduct':nameOftheProduct,
-       'priceoftheProduct':priceoftheProduct,
-       'descOfProduct':descOfProduct,
-       'revOfProduct':revOfProduct
-      }
+#tempJ={'nameOftheProduct':nameOftheProduct,
+     #  'priceoftheProduct':priceoftheProduct,
+      # 'descOfProduct':descOfProduct,
+       #'revOfProduct':revOfProduct
+      #}
 
 
 # In[40]:
 
 
-tempJ
+#tempJ
 
 
 # In[25]:
@@ -144,9 +144,9 @@ print(df.to_string())
 # In[38]:
 
 
-writer=pd.ExcelWriter('first.xlsx')
-df.to_excel(writer, sheet_name='Sheet1',index=False)
-writer.save()
-print('data is written')
+#writer=pd.ExcelWriter('first.xlsx')
+#df.to_excel(writer, sheet_name='Sheet1',index=False)
+#writer.save()
+#print('data is written')
 #df=to_excel(r'F:\Projects\python-web scraping')
 
